@@ -18,11 +18,12 @@ int main(int argc, char *argv[])
     tabWidget.setFont(font);
     tabWidget.show();
 
+    tabWidget.addTab(new PopUpCombobox{&tabWidget}, "PopUpCombobox");
+
     LineEdit *lineEdit = new LineEdit{&tabWidget};
     lineEdit->addButton(new QPushButton);
 
     tabWidget.addTab(lineEdit, "LineEdit");
-    tabWidget.addTab(new PopUpCombobox{&tabWidget}, "PopUpCombobox");
 
     return app.exec();
 }

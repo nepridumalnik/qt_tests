@@ -18,7 +18,26 @@ int main(int argc, char *argv[])
     tabWidget.setFont(font);
     tabWidget.show();
 
-    tabWidget.addTab(new PopUpCombobox{&tabWidget}, "PopUpCombobox");
+    PopUpCombobox *popupCombo = new PopUpCombobox{&tabWidget};
+    popupCombo->addItem("Первый");
+    popupCombo->addItem("Второй");
+    popupCombo->addItem("Третий");
+    popupCombo->addItem("Первый");
+    popupCombo->addItem("Второй");
+    popupCombo->addItem("Третий");
+    popupCombo->addItem("Первый");
+    popupCombo->addItem("Второй");
+    popupCombo->addItem("Третий");
+    popupCombo->addItem("Первый");
+    popupCombo->addItem("Второй");
+    popupCombo->addItem("Третий");
+    popupCombo->addItem("Первый");
+    popupCombo->addItem("Второй");
+    popupCombo->addItem("Третий");
+    popupCombo->addItem("Первый");
+    popupCombo->addItem("Второй");
+    popupCombo->addItem("Третий");
+    tabWidget.addTab(popupCombo, "PopUpCombobox");
 
     LineEdit *lineEdit = new LineEdit{&tabWidget};
     lineEdit->addButton(new QPushButton);

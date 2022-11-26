@@ -28,3 +28,8 @@ int LineEdit::buttonsSpacing()
 {
     return ui_->leftLayout->spacing();
 }
+
+void LineEdit::setReadOnly(bool cond)
+{
+    ui_->lineEdit->setReadOnly(cond);
+}

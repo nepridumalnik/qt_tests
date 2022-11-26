@@ -20,6 +20,7 @@ public:
                    QLineEdit::ActionPosition position = QLineEdit::ActionPosition::LeadingPosition);
     void setButtonsSpacing(int spacing);
     int buttonsSpacing();
+    void setReadOnly(bool cond);
 
 private:
     ::Ui::Frame *ui_;
